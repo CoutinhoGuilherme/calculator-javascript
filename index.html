@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="calculator">
+
+            <input type="text" id="input" class="input" placeholder="0" disabled>
+
+            <div class="buttons">
+                <button class="btn clear operators" id="clear" onclick="clearScreen()">C</button>
+                <button class="btn operators" onclick="backSpace()">&larr;</button>
+                <button class="btn operators" onclick="liveScreen('%')">&percnt;</button>
+                <button class="btn operators" onclick="liveScreen('/')">&divide;</button>
+
+                <button class="btn numbers" onclick="liveScreen(7)">7</button>
+                <button class="btn numbers" onclick="liveScreen(8)">8</button>
+                <button class="btn numbers" onclick="liveScreen(9)">9</button>
+                <button class="btn operators" onclick="liveScreen('*')">&times;</button>
+
+                <button class="btn numbers" onclick="liveScreen(4)">4</button>
+                <button class="btn numbers" onclick="liveScreen(5)">5</button>
+                <button class="btn numbers" onclick="liveScreen(6)">6</button>
+                <button class="btn operators" onclick="liveScreen('-')">&minus;</button>
+
+                <button class="btn numbers" onclick="liveScreen(1)">1</button>
+                <button class="btn numbers" onclick="liveScreen(2)">2</button>
+                <button class="btn numbers" onclick="liveScreen(3)">3</button>
+                <button class="btn operators" onclick="liveScreen('+')">&plus;</button>
+
+                <button class="btn span numbers" onclick="liveScreen(0)">0</button>
+                <button class="btn numbers" onclick="liveScreen('.')">&dot;</button>
+                <button class="btn operators" onclick="input.value = eval(input.value)">&equals;</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
